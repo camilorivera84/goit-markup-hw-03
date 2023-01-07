@@ -18,23 +18,39 @@ body {
 }
 .box.header {
   display: flex;
-  background: #ffffff;
-  width: 1600px;
+  flex-direction: row;
+  width: 1200px;
   border-bottom: 1px solid #eeeeee;
+  margin-left: 215px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .list {
   list-style: none;
   display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .list.header {
-  padding-left: 93px;
+  margin-left: 93px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .list.link {
   list-style: none;
   margin-right: 50px;
 }
 .contact {
-  padding-left: 433px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 272px;
+  margin-top: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 .link {
   list-style: none;
@@ -57,7 +73,6 @@ body {
   color: var(--brand-color);
   text-decoration: none;
   cursor: pointer;
-  padding-left: 215px;
   margin-top: 24px;
 }
 .link {
@@ -102,6 +117,8 @@ body {
   width: 696px;
   padding-top: 200px;
   margin-left: 452px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .hero.buttom {
   font-family: inherit;
@@ -125,13 +142,18 @@ body {
 .feature-section {
   width: 1200px;
   display: flex;
-  margin-top: 95px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 95px;
   margin-left: 215px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .feature.box {
   width: 270px;
   flex-direction: column;
-  margin-right: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .feature-section-list-title {
   font-style: normal;
@@ -139,14 +161,12 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  justify-content: space-between;
 }
 .feature-section-list-text {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   color: var(--secondary-text-color);
-  justify-content: space-between;
 }
 .work-section {
   width: 1200px;
@@ -154,20 +174,30 @@ body {
   flex-direction: column;
   margin-left: 215px;
   gap: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .list.work {
   width: 1200px;
   display: flex;
   gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 100%;
+  height: auto;
 }
-.section.subtitle {
+.subtitle-work {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   color: var(--primary-text-color);
-  margin-top: 94px;
+  padding-top: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .team-section {
   background-color: var(--secondary-background-color);
@@ -176,11 +206,29 @@ body {
   flex-direction: column;
   margin-top: 94px;
 }
+.subtitle-team {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
 .team.work {
   display: flex;
   width: 1200px;
-  gap: 37px;
+  gap: 30px;
   margin-left: 208px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
+  margin-bottom: 94px;
+  max-width: 100%;
+  height: auto;
 }
 .list.team {
   width: 270px;
@@ -207,15 +255,33 @@ body {
   color: var(--primary-enlace-color);
 }
 .footer {
+  display: flex;
+  flex-direction: column;
   background: var(--primary-background-color);
   width: 1600px;
   height: 252px;
+  margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 60px;
 }
-.logo.footer {
-  margin-left: 40px;
+.logo-footer {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--brand-color);
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 60px;
+  padding-left: 215px;
 }
 .link.list-footer {
-  justify-content: flex-start;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 9px;
 }
 .contacts {
   font-style: normal;
@@ -226,6 +292,8 @@ body {
   list-style: none;
   list-style: none;
   padding-left: 215px;
+  margin-left: 0px;
+  margin-top: 9px;
 }
 .contacts:hover,
 .contacts:focus {
@@ -260,6 +328,7 @@ body {
   border: none;
   text-transform: capitalize;
   cursor: pointer;
+  margin-top: 115px;
 }
 
 .button:hover {
@@ -278,6 +347,8 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 30px;
+  max-width: 100%;
+  height: auto;
 }
 .list.container {
   list-style: none;
