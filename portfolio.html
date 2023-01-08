@@ -15,185 +15,197 @@
     />
   </head>
   <body>
-    <header class="box header">
-      <nav class="list">
-        <a class="logo" href="index.html">Webstudio</a>
-        <ul class="list header">
-          <li id="current">
-            <a class="list link" href="index.html">Studio</a>
-          </li>
+    <header>
+      <div class="container box header">
+        <nav class="list">
+          <a class="logo" href="index.html">Webstudio</a>
+          <ul class="list header">
+            <li id="current">
+              <a class="list link" href="index.html">Studio</a>
+            </li>
+            <li>
+              <a class="list link portfolio current" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="list link contacto" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <ul class="list contact">
           <li>
-            <a class="list link portfolio current" href="portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li><a class="list link contacto" href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul class="list contact">
-        <li>
-          <a class="list link email" href="mailto: info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="list link tel" href="tel: +1-212-772-4150"
-            >+1-212-772-4150</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main class="list-portfolio">
-      <section>
-        <h1 hidden>portfolio</h1>
-        <ul class="list portfolio">
-          <li><button class="list button all" type="button">all</button></li>
-          <li>
-            <button class="list button web sites" type="button">
-              web sites
-            </button>
-          </li>
-          <li><button class="list button apps" type="button">apps</button></li>
-          <li>
-            <button class="list button design" type="button">design</button>
-          </li>
-          <li>
-            <button class="list button marketing" type="button">
-              marketing
-            </button>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul class="list-container">
-          <li class="container">
-            <img
-              class="computer"
-              src="./images/img8.jpg"
-              width="370"
-              height="294"
-              alt="Computer"
-            />
-            <h3 class="description">tecnoduck</h3>
-            <p class="text">web site</p>
-          </li>
-          <li class="container">
-            <img
-              class="poster"
-              src="./images/img9.jpg"
-              width="370"
-              height="294"
-              alt="new orleans vs golden star"
-            />
-            <h3 class="description">
-              Póster de Nueva Orleans vs Estrella Dorada Diseño
-            </h3>
-            <p class="text">design</p>
-          </li>
-          <li class="container">
-            <img
-              class="seafood"
-              src="./images/img10.jpg"
-              width="370"
-              height="294"
-              alt="seafood restaurant"
-            />
-            <h3 class="description">Seafood restaurant</h3>
-            <p class="text">app</p>
-          </li>
-          <li class="container">
-            <img
-              class="earphones"
-              src="./images/img11.jpg"
-              width="370"
-              height="294"
-              alt="earphones"
-            />
-            <h3 class="description">prime project</h3>
-            <p class="text">marketing</p>
-          </li>
-          <li class="container">
-            <img
-              class="boxes"
-              src="./images/img12.jpg"
-              width="370"
-              height="294"
-              alt="boxes project"
-            />
-            <h3 class="description">boxes project</h3>
-            <p class="text">app</p>
-          </li>
-          <li class="container">
-            <img
-              class="inspiration"
-              src="./images/img13.jpg"
-              width="370"
-              height="294"
-              alt="inspiration"
-            />
-            <h3 class="description">the inspiration has not limits</h3>
-            <p class="text">website</p>
-          </li>
-          <li class="container">
-            <img
-              class="limited-edition"
-              src="./images/img14.jpg"
-              width="370"
-              height="294"
-              alt="limited edition"
-            />
-            <h3 class="description">limited edition</h3>
-            <p class="text">design</p>
-          </li>
-          <li class="container">
-            <img
-              class="lab-project"
-              src="./images/img15.jpg"
-              width="370"
-              height="294"
-              alt="lab project"
-            />
-            <h3 class="description">project lab</h3>
-            <p class="text">marketing</p>
-          </li>
-          <li class="container">
-            <img
-              class="growing-business"
-              src="./images/img16.jpg"
-              width="370"
-              height="294"
-              alt="growing business"
-            />
-            <h3 class="description">growing business</h3>
-            <p class="text">app</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <br />
-      <a class="logo-footer" href="logo">WebStudio</a>
-      <address>
-        <ul class="link list-footer">
-          <li>
-            <a
-              class="link contacts site"
-              href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
-              >695Park Ave, New York, NY 10065 United States</a
-            >
-          </li>
-          <li>
-            <a class="link contacts email" href=" mailto: info@devstudio.com"
+            <a class="list link email" href="mailto: info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="link contacts tel" href="tel: +1-212-772-4150"
+            <a class="list link tel" href="tel: +1-212-772-4150"
               >+1-212-772-4150</a
             >
           </li>
         </ul>
-      </address>
+      </div>
+    </header>
+    <main>
+      <div class="container list-portfolio">
+        <section>
+          <h1 hidden>portfolio</h1>
+          <ul class="list portfolio-button">
+            <li><button class="list button all" type="button">all</button></li>
+            <li>
+              <button class="list button web sites" type="button">
+                web sites
+              </button>
+            </li>
+            <li>
+              <button class="list button apps" type="button">apps</button>
+            </li>
+            <li>
+              <button class="list button design" type="button">design</button>
+            </li>
+            <li>
+              <button class="list button marketing" type="button">
+                marketing
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul class="list-container">
+            <li class="container-portfolio">
+              <img
+                class="computer"
+                src="./images/img8.jpg"
+                width="370"
+                height="294"
+                alt="Computer"
+              />
+              <h3 class="description">tecnoduck</h3>
+              <p class="text">web site</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="poster"
+                src="./images/img9.jpg"
+                width="370"
+                height="294"
+                alt="new orleans vs golden star"
+              />
+              <h3 class="description">
+                Póster de Nueva Orleans vs Estrella Dorada Diseño
+              </h3>
+              <p class="text">design</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="seafood"
+                src="./images/img10.jpg"
+                width="370"
+                height="294"
+                alt="seafood restaurant"
+              />
+              <h3 class="description">Seafood restaurant</h3>
+              <p class="text">app</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="earphones"
+                src="./images/img11.jpg"
+                width="370"
+                height="294"
+                alt="earphones"
+              />
+              <h3 class="description">prime project</h3>
+              <p class="text">marketing</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="boxes"
+                src="./images/img12.jpg"
+                width="370"
+                height="294"
+                alt="boxes project"
+              />
+              <h3 class="description">boxes project</h3>
+              <p class="text">app</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="inspiration"
+                src="./images/img13.jpg"
+                width="370"
+                height="294"
+                alt="inspiration"
+              />
+              <h3 class="description">the inspiration has not limits</h3>
+              <p class="text">website</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="limited-edition"
+                src="./images/img14.jpg"
+                width="370"
+                height="294"
+                alt="limited edition"
+              />
+              <h3 class="description">limited edition</h3>
+              <p class="text">design</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="lab-project"
+                src="./images/img15.jpg"
+                width="370"
+                height="294"
+                alt="lab project"
+              />
+              <h3 class="description">project lab</h3>
+              <p class="text">marketing</p>
+            </li>
+            <li class="container-portfolio">
+              <img
+                class="growing-business"
+                src="./images/img16.jpg"
+                width="370"
+                height="294"
+                alt="growing business"
+              />
+              <h3 class="description">growing business</h3>
+              <p class="text">app</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <section class="section">
+          <a class="logo-footer" href="logo">WebStudio</a>
+          <address>
+            <ul class="link list-footer">
+              <li>
+                <a
+                  class="link contacts site"
+                  href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
+                  >695Park Ave, New York, NY 10065 United States</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link contacts email"
+                  href=" mailto: info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="link contacts tel" href="tel: +1-212-772-4150"
+                  >+1-212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

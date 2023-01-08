@@ -4,7 +4,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-  width: 1600px;
 }
 :root {
   --brand-color: #2196f3;
@@ -16,22 +15,47 @@ body {
   --secondary-background-color: #f5f4fa;
   --container-color: #eeeeee;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .box.header {
   display: flex;
   flex-direction: row;
   width: 1200px;
   border-bottom: 1px solid #eeeeee;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 215px;
 }
 .list {
   list-style: none;
   display: flex;
-  padding-right: 0px;
   padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 .list.header {
   margin-left: 93px;
@@ -46,11 +70,7 @@ body {
 .contact {
   display: flex;
   flex-direction: row;
-  margin-left: 272px;
-  margin-top: 0px;
-  padding-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  margin-left: 240px;
 }
 .link {
   list-style: none;
@@ -141,16 +161,6 @@ body {
 .hero.button:hover {
   outline: var(--brand-color);
 }
-.feature-section {
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 95px;
-  margin-left: 215px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .feature.box {
   width: 270px;
   flex-direction: column;
@@ -172,25 +182,11 @@ body {
   margin-top: 10px;
   margin-bottom: 0px;
 }
-.work-section {
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 215px;
-  gap: 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.list.work {
-  width: 1200px;
-  display: flex;
-  gap: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.photos-work {
   max-width: 100%;
   height: auto;
+  gap: 20px;
+  padding-left: 0px;
 }
 .subtitle-work {
   font-style: normal;
@@ -199,16 +195,12 @@ body {
   line-height: 1.2;
   text-align: center;
   color: var(--primary-text-color);
-  padding-top: 94px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 55px;
 }
 .team-section {
   background-color: var(--secondary-background-color);
   width: 1600px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 94px;
+  height: 648px;
 }
 .subtitle-team {
   font-style: normal;
@@ -218,21 +210,18 @@ body {
   text-align: center;
   color: var(--primary-text-color);
   margin-top: 0px;
+  padding-top: 90px;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .team.work {
   display: flex;
-  width: 1200px;
+  flex-direction: row;
   gap: 30px;
-  margin-left: 208px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0px;
-  margin-bottom: 94px;
-  max-width: 100%;
-  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .list.team {
   width: 270px;
@@ -242,7 +231,13 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team.section.description {
+.team.images {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 100%;
+  height: auto;
+}
+.team.description {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -251,7 +246,7 @@ body {
   color: var(--primary-text-color);
   margin-top: 30px;
 }
-.team.section.text {
+.team.text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -266,7 +261,7 @@ body {
   background: var(--primary-background-color);
   width: 1600px;
   height: 252px;
-  margin-top: 0px;
+  margin-top: 60px;
   padding-right: 0px;
   padding-left: 0px;
   padding-bottom: 60px;
@@ -341,25 +336,27 @@ body {
   color: var(--primary-white-color);
   background: var(--brand-color);
 }
-.list-portfolio {
+.portfolio-button {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 56px;
+  gap: 8px;
 }
 .list-container {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   max-width: 100%;
   height: auto;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.list.container {
-  list-style: none;
-}
-.container {
+.container-portfolio {
   color: var(--primary-white-color);
   border: 1px solid var(--container-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),

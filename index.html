@@ -15,38 +15,41 @@
     />
   </head>
   <body>
-    <header class="box header">
-      <nav class="list">
-        <a class="logo" href="index.html">Webstudio</a>
-        <ul class="list header">
-          <li id="current">
-            <a class="list link current" href="index.html">Studio</a>
-          </li>
-          <li>
-            <a class="list link portfolio" href="portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="list link contacto" href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul class="list contact">
-        <li>
-          <a class="list link email" href="mailto: info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="list link tel" href="tel: +1-212-772-4150"
-            >+1-212-772-4150</a
-          >
-        </li>
-      </ul>
+    <header>
+      <div class="container box header">
+        <nav class="list">
+          <a class="logo" href="index.html">Webstudio</a>
+          <ul class="list header">
+            <li id="current">
+              <a class="list link current" href="index.html">Studio</a>
+            </li>
+            <li>
+              <a class="list link portfolio" href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="list link contacto" href="#">Contacts</a></li>
+          </ul>
+
+          <ul class="list contact">
+            <li>
+              <a class="list link email" href="mailto: info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="list link tel" href="tel: +1-212-772-4150"
+                >+1-212-772-4150</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="hero section">
+      <div class="hero section">
         <h1 class="hero title">Efective Solutions For Your Business</h1>
         <button class="hero buttom" type="button">Request our service</button>
-      </section>
-      <section class="feature-section">
+      </div>
+      <div class="container feature section">
         <h2 class="feature-section-title" hidden>Características</h2>
         <ul class="list">
           <li class="feature box">
@@ -78,10 +81,10 @@
             </p>
           </li>
         </ul>
-      </section>
-      <section class="work-section">
+      </div>
+      <div class="container work section">
         <h2 class="subtitle-work">What we do</h2>
-        <ul class="list work">
+        <ul class="list photos-work">
           <li>
             <img
               class="type"
@@ -107,29 +110,29 @@
             />
           </li>
         </ul>
-      </section>
-      <section class="team-section">
+      </div>
+      <div class="team-section">
         <h2 class="subtitle-team">Our Team</h2>
-        <ul class="team work">
+        <ul class="container team work">
           <li class="list team">
             <img
-              class="team section images"
+              class="team images"
               src="./images/img4.jpg"
               width="270"
               alt="Christopher Walker"
             />
-            <h3 class="team section description">Christopher Walker</h3>
-            <p class="team section text">Product Designer</p>
+            <h3 class="team description">Christopher Walker</h3>
+            <p class="team text">Product Designer</p>
           </li>
           <li class="list team">
             <img
-              class="team section images"
+              class="team images"
               src="./images/img5.jpg"
               width="270"
               alt="Kylie Evans"
             />
-            <h3 class="team section description">Kylie Evans</h3>
-            <p class="team section text">Frontend Developer</p>
+            <h3 class="team description">Kylie Evans</h3>
+            <p class="team text">Frontend Developer</p>
           </li>
           <li class="list team">
             <img
@@ -138,8 +141,8 @@
               width="270"
               alt="Ryan Harris"
             />
-            <h3 class="team section description">Ryan Harris</h3>
-            <p class="team section text">Marketing</p>
+            <h3 class="team description">Ryan Harris</h3>
+            <p class="team text">Marketing</p>
           </li>
           <li class="list team">
             <img
@@ -148,35 +151,39 @@
               width="270"
               alt="Tyler Moore"
             />
-            <h3 class="team section description">Tyler Moore</h3>
-            <p class="team section text">UI Designer</p>
+            <h3 class="team description">Tyler Moore</h3>
+            <p class="team text">UI Designer</p>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
-    <footer class="footer">
-      <a class="logo-footer" href="WebStudio">WebStudio</a>
-      <address>
-        <ul class="link list-footer">
-          <li>
-            <a
-              class="link contacts site"
-              href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
-              >695Park Ave, New York, NY 10065 United States</a
-            >
-          </li>
-          <li>
-            <a class="link contacts email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link contacts tel" href="tel:+1-212-772-4150"
-              >+1-212-772-4150</a
-            >
-          </li>
-        </ul>
-      </address>
+    <footer>
+      <div class="footer">
+        <section class="section">
+          <a class="logo-footer" href="WebStudio">WebStudio</a>
+          <address>
+            <ul class="link list-footer">
+              <li>
+                <a
+                  class="link contacts site"
+                  href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
+                  >695Park Ave, New York, NY 10065 United States</a
+                >
+              </li>
+              <li>
+                <a class="link contacts email" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="link contacts tel" href="tel:+1-212-772-4150"
+                  >+1-212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
