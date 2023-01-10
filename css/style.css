@@ -90,20 +90,24 @@ p {
   color: var(--brand-color);
   text-decoration: none;
   cursor: pointer;
-  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-pages {
   display: flex;
   align-items: center;
   flex-direction: row;
   margin-left: 93px;
-  margin-top: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .contact {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-left: 270px;
-  margin-top: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .link {
   font-style: normal;
@@ -275,7 +279,7 @@ p {
   color: var(--primary-enlace-color);
   margin-top: 10px;
 }
-.footer {
+.footer-section {
   display: flex;
   flex-direction: column;
   background: var(--primary-background-color);
@@ -366,7 +370,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   max-width: 100%;
   height: auto;
   padding-left: 0;
