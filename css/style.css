@@ -27,7 +27,6 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin: 0 auto;
 }
 .container {
   width: 1200px;
@@ -68,10 +67,18 @@ p {
   list-style: none;
 }
 
-.list.link {
+.list {
   list-style: none;
   padding-bottom: 32px;
   padding-top: 32px;
+}
+.list-contact {
+  padding-bottom: 0;
+  padding-top: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 .list-item {
   margin-right: 50px;
@@ -106,15 +113,7 @@ p {
 .header-pages {
   display: flex;
   align-items: center;
-  padding-left: 93px;
-}
-.contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 344px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: 93px;
 }
 .link {
   font-style: normal;
@@ -143,8 +142,6 @@ p {
 }
 .hero-section {
   background: var(--primary-background-color);
-  width: 1200px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -165,7 +162,7 @@ p {
   color: var(--primary-white-color);
   width: 696px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .hero.buttom {
@@ -181,7 +178,6 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 30px;
   padding: 10px 32px;
 }
 .hero.button:focus,
@@ -196,10 +192,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
 }
+
 .feature-box {
   flex-basis: calc((100% - 90px) / 4);
 }
+
 .feature-section-list-title {
   font-style: normal;
   font-weight: 700;
@@ -219,9 +218,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
 }
 .work-images {
-  flex-basis: calc((100% - 30px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .subtitle-work {
@@ -235,8 +235,6 @@ p {
 }
 .team-section {
   background-color: var(--secondary-background-color);
-  width: 1200px;
-  height: 648px;
 }
 .subtitle-team {
   font-style: normal;
@@ -260,20 +258,21 @@ p {
   margin-bottom: 0;
 }
 .list.team {
-  width: 270px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 .team.images {
   padding-top: 0;
   padding-bottom: 0;
   max-width: 100%;
   height: auto;
+  margin-bottom: 30px;
 }
 .feature-actor {
-  margin-top: 30px;
   padding-bottom: 30px;
 }
 .team.description {
@@ -297,18 +296,13 @@ p {
   display: flex;
   flex-direction: column;
   background: var(--primary-background-color);
-  width: 1200px;
-  height: 252px;
   margin-top: 60px;
   padding-right: 0px;
   padding-left: 0px;
   padding-bottom: 60px;
   margin: 0 auto;
 }
-.container-footer {
-  display: flex;
-  flex-direction: column;
-}
+
 .logo-footer {
   font-family: 'Raleway';
   font-style: normal;
@@ -320,15 +314,17 @@ p {
   cursor: pointer;
   padding-top: 60px;
   margin-bottom: 9px;
+  margin-left: 15px;
 }
 .contacts.site {
+  margin-left: 15px;
   margin-bottom: 27px;
 }
-.link.list-footer {
-  padding-left: 0px;
+.list-footer {
+  margin-left: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-top: 9px;
+  padding-left: 0;
 }
 .contacts {
   font-style: normal;
@@ -338,7 +334,6 @@ p {
   text-decoration: none;
   list-style: none;
   list-style: none;
-  margin-left: 0px;
   margin-top: 9px;
 }
 .contacts:hover,
@@ -351,6 +346,12 @@ p {
   font-size: 14px;
   color: var(--primary-white-color);
   text-decoration: none;
+}
+.footer-item {
+  margin-bottom: 2px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 
 .link.site:hover,
@@ -386,9 +387,7 @@ p {
   background: var(--brand-color);
 }
 .portfolio-button {
-  flex-wrap: wrap;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -398,6 +397,7 @@ p {
   gap: 30px;
   padding-left: 0;
 }
+
 .container-portfolio {
   color: var(--primary-white-color);
   border: 1px solid var(--container-color);
@@ -405,7 +405,10 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   width: 370px;
   height: 404px;
+  flex-basis: calc((100% - 60px) / 3);
+  cursor: pointer;
 }
+
 .feature-portfolio {
   margin-top: 20px;
   margin-bottom: 20px;
