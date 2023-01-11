@@ -16,56 +16,57 @@
   </head>
   <body>
     <header class="border">
-      <section>
-        <div class="container header-container">
-          <nav class="menu">
-            <a class="logo" href="index.html">Webstudio</a>
-            <ul class="list header-pages">
-              <li id="current">
-                <a class="list link" href="index.html">Studio</a>
-              </li>
-              <li>
-                <a class="list link current portfolio" href="portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li><a class="list link contacto" href="#">Contacts</a></li>
-            </ul>
-
-            <ul class="list contact">
-              <li>
-                <a class="list link email" href="mailto: info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="list link tel" href="tel: +1-212-772-4150"
-                  >+1-212-772-4150</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
+      <div class="container header-container">
+        <nav class="menu">
+          <a class="logo" href="index.html">Webstudio</a>
+          <ul class="list header-pages">
+            <li id="current" class="list-item">
+              <a class="list link" href="index.html">Studio</a>
+            </li>
+            <li class="list-item">
+              <a class="list link current portfolio" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="list link contacto" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list contact">
+          <li class="list-item">
+            <a class="list link email" href="mailto: info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="list-item">
+            <a class="list link tel" href="tel: +1-212-772-4150"
+              >+1-212-772-4150</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="section">
         <div class="container list-portfolio">
           <h1 hidden>portfolio</h1>
           <ul class="list portfolio-button">
-            <li><button class="list button all" type="button">all</button></li>
-            <li>
+            <li class="item-button">
+              <button class="list button all" type="button">all</button>
+            </li>
+            <li class="item-button">
               <button class="list button web sites" type="button">
                 web sites
               </button>
             </li>
-            <li>
+            <li class="item-button">
               <button class="list button apps" type="button">apps</button>
             </li>
-            <li>
+            <li class="item-button">
               <button class="list button design" type="button">design</button>
             </li>
-            <li>
+            <li class="item-button">
               <button class="list button marketing" type="button">
                 marketing
               </button>
@@ -80,8 +81,10 @@
                 width="370"
                 alt="Computer"
               />
-              <h3 class="description">tecnoduck</h3>
-              <p class="text">web site</p>
+              <div class="feature-portfolio">
+                <h3 class="description">tecnoduck</h3>
+                <p class="text">web site</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -90,10 +93,12 @@
                 width="370"
                 alt="new orleans vs golden star"
               />
-              <h3 class="description">
-                Póster de Nueva Orleans vs Estrella Dorada Diseño
-              </h3>
-              <p class="text">design</p>
+              <div class="feature-portfolio">
+                <h3 class="description">
+                  Póster de Nueva Orleans vs Estrella Dorada Diseño
+                </h3>
+                <p class="text">design</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -102,8 +107,10 @@
                 width="370"
                 alt="seafood restaurant"
               />
-              <h3 class="description">Seafood restaurant</h3>
-              <p class="text">app</p>
+              <div class="feature-portfolio">
+                <h3 class="description">Seafood restaurant</h3>
+                <p class="text">app</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -112,8 +119,10 @@
                 width="370"
                 alt="earphones"
               />
-              <h3 class="description">prime project</h3>
-              <p class="text">marketing</p>
+              <div class="feature-portfolio">
+                <h3 class="description">prime project</h3>
+                <p class="text">marketing</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -122,8 +131,10 @@
                 width="370"
                 alt="boxes project"
               />
-              <h3 class="description">boxes project</h3>
-              <p class="text">app</p>
+              <div class="feature-portfolio">
+                <h3 class="description">boxes project</h3>
+                <p class="text">app</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -132,8 +143,11 @@
                 width="370"
                 alt="inspiration"
               />
-              <h3 class="description">the inspiration has not limits</h3>
-              <p class="text">website</p>
+              }
+              <div class="feature-portfolio">
+                <h3 class="description">the inspiration has not limits</h3>
+                <p class="text">website</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -142,8 +156,10 @@
                 width="370"
                 alt="limited edition"
               />
-              <h3 class="description">limited edition</h3>
-              <p class="text">design</p>
+              <div class="feature-portfolio">
+                <h3 class="description">limited edition</h3>
+                <p class="text">design</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -152,8 +168,10 @@
                 width="370"
                 alt="lab project"
               />
-              <h3 class="description">project lab</h3>
-              <p class="text">marketing</p>
+              <div class="feature-portfolio">
+                <h3 class="description">project lab</h3>
+                <p class="text">marketing</p>
+              </div>
             </li>
             <li class="container-portfolio">
               <img
@@ -162,35 +180,33 @@
                 width="370"
                 alt="growing business"
               />
-              <h3 class="description">growing business</h3>
-              <p class="text">app</p>
+              <div class="feature-portfolio">
+                <h3 class="description">growing business</h3>
+                <p class="text">app</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
-      <section>
-        <div class="container footer-section">
-          <a class="logo-footer" href="logo">WebStudio</a>
+      <section class="footer-section">
+        <div class="container container-footer">
+          <a class="logo-footer" href="WebStudio">WebStudio</a>
           <address>
+            <a
+              class="link contacts site"
+              href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
+              >695Park Ave, New York, NY 10065 United States</a
+            >
             <ul class="link list-footer">
               <li>
-                <a
-                  class="link contacts site"
-                  href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
-                  >695Park Ave, New York, NY 10065 United States</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link contacts email"
-                  href=" mailto: info@devstudio.com"
+                <a class="link contacts email" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="link contacts tel" href="tel: +1-212-772-4150"
+                <a class="link contacts tel" href="tel:+1-212-772-4150"
                   >+1-212-772-4150</a
                 >
               </li>
