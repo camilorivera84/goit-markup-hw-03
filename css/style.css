@@ -51,6 +51,17 @@ p {
   padding-left: 0px;
   margin: 0px;
 }
+.link-pages {
+  cursor: pointer;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  list-style: none;
+}
 *,
 *::before,
 *::after {
@@ -63,24 +74,13 @@ p {
   margin-bottom: 0px;
 }
 
-.list {
-  list-style: none;
-}
-
-.list {
-  list-style: none;
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
 .list-contact {
-  padding-bottom: 0;
-  padding-top: 0;
   list-style: none;
   display: flex;
   margin-left: auto;
   align-items: center;
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
   padding-left: 0;
 }
 .list-item {
@@ -101,6 +101,13 @@ p {
 .link:focus {
   color: var(--brand-color);
 }
+.link-pages:focus {
+  color: var(--brand-color);
+}
+.link-pages:hover {
+  color: var(--brand-color);
+}
+
 .logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -117,6 +124,8 @@ p {
   display: flex;
   align-items: center;
   margin-left: 93px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .link {
   font-style: normal;
@@ -124,7 +133,6 @@ p {
   line-height: 1.2;
   color: var(--primary-text-color);
   text-decoration: none;
-  cursor: pointer;
   list-style: none;
 }
 .link.contact {
@@ -275,9 +283,6 @@ p {
 .team.images {
   padding-top: 0;
   padding-bottom: 0;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 30px;
 }
 .feature-actor {
   padding-bottom: 30px;
@@ -303,9 +308,9 @@ p {
   display: flex;
   flex-direction: column;
   background: var(--primary-background-color);
-  margin-top: 60px;
+  padding-top: 60px;
   padding-right: 0px;
-  padding-left: 0px;
+  margin-left: 0;
   padding-bottom: 60px;
   margin: 0 auto;
 }
@@ -319,16 +324,12 @@ p {
   color: var(--brand-color);
   text-decoration: none;
   cursor: pointer;
-  padding-top: 60px;
   margin-bottom: 9px;
-  margin-left: 15px;
 }
 .contacts.site {
-  margin-left: 15px;
   margin-bottom: 27px;
 }
 .list-footer {
-  margin-left: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0;
@@ -340,8 +341,6 @@ p {
   color: #757575;
   text-decoration: none;
   list-style: none;
-  list-style: none;
-  margin-top: 9px;
 }
 .contacts:hover,
 .contacts:focus {
