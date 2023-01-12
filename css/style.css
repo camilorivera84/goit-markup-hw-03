@@ -418,10 +418,12 @@ p {
   flex-basis: calc((100% - 60px) / 3);
   cursor: pointer;
 }
+.image-portfolio {
+  margin-bottom: 20px;
+}
 
 .feature-portfolio {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .description {
   font-style: normal;
