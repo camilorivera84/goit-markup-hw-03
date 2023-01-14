@@ -415,9 +415,6 @@ p {
   flex-wrap: wrap;
   display: flex;
   gap: 30px;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .container-portfolio {
