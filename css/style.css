@@ -201,6 +201,18 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .feature-section {
   display: flex;
   flex-wrap: wrap;
@@ -281,6 +293,7 @@ p {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 0;
   padding-top: 0;
+  flex-basis: calc((100% - 90px) / 4);
 }
 .team.images {
   padding-top: 0;
@@ -418,15 +431,12 @@ p {
   cursor: pointer;
   padding-bottom: 0;
 }
-.image-portfolio {
-  margin-bottom: 20px;
-}
 
 .feature-portfolio {
   padding-bottom: 20px;
   margin-top: 0;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -438,7 +448,8 @@ p {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   text-transform: capitalize;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 0;
 }
 .text {
   font-style: normal;
@@ -448,7 +459,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   text-transform: capitalize;
-  margin-top: 4px;
   margin-bottom: 0px;
 }
 .current {
