@@ -311,6 +311,7 @@ p {
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 10px;
+  padding-bottom: 0;
 }
 .team.text {
   font-style: normal;
@@ -430,9 +431,9 @@ p {
 }
 
 .feature-portfolio {
+  margin-top: 0;
+  margin-top: 0;
   padding-bottom: 20px;
-  margin-top: 0;
-  margin-top: 0;
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -445,8 +446,7 @@ p {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   text-transform: capitalize;
-  padding-bottom: 4px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }
 .text {
   font-style: normal;
